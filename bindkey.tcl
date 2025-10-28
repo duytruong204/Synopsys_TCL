@@ -61,5 +61,12 @@ gi::createBinding -windowType leLayout -event Ctrl-p    -action lePin           
 
 gi::createBinding -windowType leLayout -event Ctrl-a    -action deSelectAll                                     -set Maestro
 gi::createBinding -windowType leLayout -event c         -action leCopy                                          -set Maestro
-
+gi::createBinding -windowType leLayout -event m         -action leMove                                          -set Maestro
+gi::createBinding -windowType leLayout -event a         -action leAlign                                         -set Maestro
+gi::createBinding -windowType leLayout -event Shift-c   -action leChop                                          -set Maestro
+gi::createBinding -windowType leLayout -event Shift-m   -action leMerge                                         -set Maestro
+gi::createBinding -windowType leLayout -event Ctrl-o    -action deSetOrigin                                     -set Maestro
+gi::createBinding -windowType leLayout -event r         -action leRectangle                                     -set Maestro
+gi::createBinding -windowType leLayout -event Shift-r   -action lePolygon                                       -set Maestro
+gi::createBinding -windowType leLayout -event s         -action leStretch                                       -set Maestro
 

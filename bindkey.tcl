@@ -69,4 +69,20 @@ gi::createBinding -windowType leLayout -event Ctrl-o    -action deSetOrigin     
 gi::createBinding -windowType leLayout -event r         -action leRectangle                                     -set Maestro
 gi::createBinding -windowType leLayout -event Shift-r   -action lePolygon                                       -set Maestro
 gi::createBinding -windowType leLayout -event s         -action leStretch                                       -set Maestro
+gi::createBinding -windowType leLayout -event u         -action deUndo                                          -set Maestro
+gi::createBinding -windowType leLayout -event Shift-u   -action deRedo                                          -set Maestro
+gi::createBinding -windowType leLayout -event y         -action leYank                                          -set Maestro
+gi::createBinding -windowType leLayout -event Shift-y   -action lePaste                                         -set Maestro
+gi::createBinding -windowType leLayout -event Delete    -action leDelete                                        -set Maestro
+gi::createBinding -windowType leLayout -event h         -action leFlipHorizontal                                -set Maestro
+gi::createBinding -windowType leLayout -event j         -action leFlipVertical                                  -set Maestro
+gi::createBinding -windowType leLayout -event t         -action leTrimWire                                      -set Maestro
+gi::createBinding -windowType leLayout -event e         -action deDescendInPlace                                -set Maestro
+gi::createBinding -windowType leLayout -event x         -action deDescend                                       -set Maestro
+gi::createBinding -windowType leLayout -event Shift-x   -action deReturn                                        -set Maestro
+gi::createBinding -windowType leLayout -event f         -action deFitView                                       -set Maestro
+gi::createBinding -windowType leLayout -event Shift-j   -action dbShowFindReplace                               -set Maestro
+gi::createBinding -windowType leLayout -event "Shift-Greater" -command "de::replayCommand"                      -set Maestro
+gi::createBinding -windowType leLayout -event 1         -command {selectLayer M1 e1; selectLayer M1 e2; selectLayer M1 e3; selectLayer M1 drawing}              -set Maestro
+gi::createBinding -windowType leLayout -event 2         -command {selectLayer M2 drawing }              -set Maestro
 
